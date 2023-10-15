@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVerseXplorer Market Page</title>
+    <link rel="icon" type="image/x-icon" href="crypto 2.png">
+    <link rel="stylesheet" href="CVX.css">
+</head>
+<div class="error1">
+    <h1>🚨 This site is not compatible with this resolution</h1>
+</div>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="bgimg">
+            <div class="bgimg2">
+                <!--logo with home window link-->
+                <a href="Cryptoversexplorer.html"><img class="headerimg" src="Projects logo\crypto 2.png" alt="attache"
+                        width="20%" height="10%"></a>
+                <!--navigation buttons-->
+                <nav>
+                    <a class="nav" href="index.html">Home</a>
+                    <a class="nav1" href="market.html">Market</a>
+                    <a class="nav1" href="partners.html">Partners</a>
+                    <a class="nav1" href="pricing.html">Price Table</a>
+                    <a class="nav1" href="team.html">About Team</a>
+                </nav>
+            </div>
+        </div>
+        <content>
+            <section class="market">
+                <h1>Live Market</h1><br><br><br><br>
+                <!-- coin id = bitcoin,ethereum,solana,binancecoin,tether,matic-network,tron,avalanche-2,dogecoin,cardano,eos,the-sandbox,shibalana,ripple-->
+                <div class="coinlist">
+                    <div class="coin">
+                        <img src="coins/btc.png" alt="">
+                        <div>
+                            <h2><span id="bitcoin"></span></h2>
+                            <p>Bitcoin</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/eth1.png" alt="">
+                        <div>
+                            <h2><span id="ethereum"></h2>
+                            <p>Ethereum</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/sol1.png" alt="">
+                        <div>
+                            <h2><span id="solana"></h2>
+                            <p>Solana</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/bnb1.png" alt="">
+                        <div>
+                            <h2><span id="binancecoin"></h2>
+                            <p>BNB</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/usdt.png" alt="">
+                        <div>
+                            <h2><span id="tether"></h2>
+                            <p>USDT</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/ada.png" alt="">
+                        <div>
+                            <h2><span id="cardano"></h2>
+                            <p>ADA</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/trx.png" alt="">
+                        <div>
+                            <h2><span id="tron"></h2>
+                            <p>Tron(trx)</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/sand.png" alt="">
+                        <div>
+                            <h2><span id="the-sandbox"></h2>
+                            <p>Sand</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/shiba.png" alt="">
+                        <div>
+                            <h2><span id="shibalana"></h2>
+                            <p>ShibaInu</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/matic1.png" alt="">
+                        <div>
+                            <h2><span id="matic-network"></h2>
+                            <p>Matic</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/eos.png" alt="">
+                        <div>
+                            <h2><span id="eos"></h2>
+                            <p>EOS</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/avax.png" alt="">
+                        <div>
+                            <h2><span id="avalanche-2"></h2>
+                            <p>Avax</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/doge1.png" alt="">
+                        <div>
+                            <h2><span id="dogecoin"></h2>
+                            <p>DogeCoin</p>
+                        </div>
+                    </div> 
+                    <div class="coin">
+                        <img src="coins/xrp.png" alt="">
+                        <div>
+                            <h2><span id="ripple"></h2>
+                            <p>XRP</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/polkadot.jpg" alt="">
+                        <div>
+                            <h2><span id="polkadot"></h2>
+                            <p>polkadot</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/aptos.jpg" alt="">
+                        <div>
+                            <h2><span id="aptos"></h2>
+                            <p>aptos</p>
+                        </div>
+                    </div>
+                    <div class="coin">
+                        <img src="coins/aave.jpg" alt="">
+                        <div>
+                            <h2><span id="aave"></h2>
+                            <p>aave</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="coingecko">Powered by <a href="https://www.coingecko.com/">CoinGecko</a></p>
+            </section>
+        </content>
+    </main>
+    <script src="coinapi.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const cryptoIds = [
+            'bitcoin',
+            'ethereum',
+            'solana',
+            'cardano',
+            'eos',
+            'dogecoin',
+            'tron',
+            'binancecoin',
+            'tether',
+            'matic-network',
+            'avalanche-2',
+            'the-sandbox',
+            'shibalana',
+            'ripple',
+            'polkadot',
+            'aptos',
+            'aave',
+            // Add more cryptocurrency IDs here
+        ];
+
+        const fetchData = async () => {
+            const url = 'https://api.coingecko.com/api/v3/simple/price';
+            const params = {
+                ids: cryptoIds.join(','),
+                vs_currencies: 'usd',
+            };
+
+            try {
+                const response = await axios.get(url, { params });
+                const data = response.data;
+
+                for (const cryptoId of cryptoIds) {
+                    const element = document.getElementById(cryptoId);
+                    if (element && data[cryptoId] && data[cryptoId].usd) {
+                        element.innerHTML = `$${data[cryptoId].usd}`;
+                    }
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        // Call fetchData to fetch and update cryptocurrency data when the page loads
+        window.addEventListener('load', fetchData);
+    </script>
+</body>
+<!--for footer area-->
+<footer class="footermarket">
+    <div class="foottext">
+        <div class="foottext1">
+            <h2>Team info</h2>
+            <hr><br>
+            <a href="">Owner</a><br><br>
+            <a href="">Co-owner</a><br><br>
+            <a href="">Manager</a><br><br>
+            <a href="">Admin</a>
+        </div>
+        <div class="foottext2">
+            <h2>Apply Jobs</h2>
+            <hr><br>
+            <a href="apply4job.php">Web Dev</a><br><br>
+            <a href="apply4job.html">Linux Dev</a><br><br>
+            <a href="apply4job.html">Solidity Dev</a><br><br>
+            <a href="apply4job.html">Ai Dev</a>
+        </div>
+        <div class="foottext3">
+            <h2>contact Us</h2>
+            <hr><br>
+            <a href="https://x.com/CryptoXverse">Twitter</a><br><br>
+            <a href="https://cryptoxverse@gmail.com">Gmail</a><br><br>
+            <a href="">Instagram</a><br><br>
+            <a href="https://t.me/CryptoVerseXplorer">Telegram</a>
+        </div>
+    </div>
+    <div class="footimg">
+        <div class="cu_pad1">
+            <img src="Projects logo/contactus2.png" alt="" width="20%" height="15%">
+        </div>
+        <div class="footlogo">
+            <a href="https://t.me/CryptoVerseXplorer"><img src="Projects logo\tg logo.png" alt="" width="5%"
+                    height="2%"></a>
+            <a href="https://discord.gg/ats8vt7TrV"><img class="dc_pad" src="Projects logo\Dc logo.png" alt=""
+                    width="4%" height="1.5%"></a>
+            <a href="https://x.com/CryptoXverse"><img src="Projects logo\tt logo.png" alt="" width="5%"
+                    height="2%"></a>
+            <a href="https://cryptoxverse@gmail.com"><img src="Projects logo\gmail.png" alt="" width="5%"
+                    height="2%"></a>
+        </div>
+    </div>
+    <p>All ©Copyright Reserved By Team <a href="https://t.me/CryptoVerseXplorer">CryptoVerseXplorer</a> & DESIGNED By <a
+            href="https://t.me/Charlie_7878">@Charlie_7878</a></p>
+</footer>
+
+</html>
