@@ -2177,6 +2177,9 @@ blockquote {
     #clients .col-5{
         width: 30%;
     }
+    #clients .col-6{
+        width: 30%;
+    }
 
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-2-3, .col-3-4, .col-9-10, .col-61, .col-38 {
         padding-right: 0;
@@ -2240,11 +2243,11 @@ blockquote {
 
     /*-----------------Typography-----------------*/
     h1 {
-        font-size: 38px;
+        font-size: 30px;
     }
 
     #banner h1 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     /* Hide Elements */
@@ -2277,6 +2280,9 @@ blockquote {
     }
 
     #clients .col-5{
+        width: 30%;
+    }
+    #clients .col-6{
         width: 30%;
     }
 
@@ -2395,7 +2401,3 @@ blockquote {
     }
 
 }
-
-
-
-
