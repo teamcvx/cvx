@@ -2270,6 +2270,13 @@ blockquote {
         display:none;
     }
 
+    h1 {
+        font-size: 30px;
+    }
+
+    #banner h1 {
+        font-size: 40px;
+    }
 
     .row {
         padding: 15px 0 !important;
